@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "openfga",
+      "camelcase": "OpenFga",
+      "scope": "source.openfga",
+      "file-types": [
+        "fga",
+        "openfga"
+      ],
+      "injection-regex": "^openfga$",
+      "class-name": "TreeSitterOpenfga",
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Tree-sitter parser for the OpenFGA Configuration DSL",
+    "authors": [
+      {
+        "name": "sebb3",
+        "email": "mail@sebbe.cc",
+        "url": "https://github.com/sebb3"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/sebb3/tree-sitter-openfga"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
