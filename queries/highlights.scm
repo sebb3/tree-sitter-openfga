@@ -12,7 +12,6 @@
   name: (identifier) @function)
 
 (version) @number
-
 [
   "*"
   "/"
@@ -36,7 +35,9 @@
   "but not"
 ] @condition
 
-(type_declaration typename: (identifier) @function)
+(type_declaration typename: (identifier) @function
+    (relations (definition relation: (identifier) @variable))
+    )
 
 [
   "model"
